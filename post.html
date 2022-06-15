@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./popup-form-style.css">
+    <title>All Questions</title>
+</head>
+
+<body>
+    <h3 style="text-align:right ;">Logged IN: <span id="curr-user" style="color: rgb(244, 98, 98);">GUEST</span></h3>
+    <div>
+        <form id="my-form">
+            <label for="title">Post Title:</label><br>
+            <input type="text" id="title" name="title"><br>
+
+            <label for="description">Description:</label><br>
+            <input type="text" id="description" name="description"><br>
+
+            <label for="tags">Tags:</label><br>
+            <input type="text" id="tags" name="tags" value=""><br>
+            <input type="submit" value="Submit" style="font-size: 20px;">
+        </form>
+        <div class="form-popup centered" id="myForm">
+            <form class="form-container" id="update-form">
+                <h1>UPDATE</h1>
+
+                <label for="title">Post Title:</label><br>
+                <input type="text" id="title" name="title"><br>
+
+                <label for="description">Description:</label><br>
+                <input type="text" id="description" name="description"><br>
+
+                <label for="tags">Tags:</label><br>
+                <input type="text" id="tags" name="tags" value=""><br>
+
+                <button type="submit" class="btn btn-lg bg-yellow">UPDATE</button>
+                <button type="button" class="btn btn-lg bg-green" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="d1">
+        <table id="table">
+            <tr>
+                <th>POST ID</th>
+                <th>TITLE</th>
+                <th>DESCRIPTION</th>
+                <th>TAGS</th>
+                <th>AUTHOR</th>
+                <th>CREATED AT</th>
+                <th>DELETE/UPDATE</th>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="./index.js"></script>
+
+</html>
